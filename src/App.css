@@ -1,19 +1,21 @@
-/* App.css */
-
-/* CSS Variables */
 :root {
-  --primary-color: #4CAF50;
-  --secondary-color: #f9f9f9;
-  --font-family: Arial, sans-serif;
-  --button-hover-color: #45a049;
-  --border-radius: 5px;
-  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --primary-color: #6200ea; /* Bright purple */
+  --secondary-color: #03dac6; /* Bright teal */
+  --background-color: #f5f5f5; /* Light grey background */
+  --font-family: 'Roboto', sans-serif;
+  --button-hover-color: #3700b3; /* Darker purple for hover effect */
+  --text-color: #333; /* Dark text color */
+  --input-background: #fff; /* White input background */
+  --input-border: #ddd; /* Light grey input border */
+  --card-background: #fff; /* White card background */
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Global Styles */
 body {
   font-family: var(--font-family);
-  background-color: #f0f0f0;
+  background-color: var(--background-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
 }
@@ -46,7 +48,7 @@ nav ul li a {
 }
 
 form {
-  background-color: white;
+  background-color: var(--card-background);
   padding: 2em;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
@@ -58,7 +60,8 @@ input[type="text"], input[type="number"] {
   width: 100%;
   padding: 0.5em;
   margin-bottom: 1em;
-  border: 1px solid #ccc;
+  background-color: var(--input-background);
+  border: 1px solid var(--input-border);
   border-radius: var(--border-radius);
 }
 
@@ -83,14 +86,13 @@ button[type="submit"]:hover {
 }
 
 .workouts li {
-  background-color: white;
+  background-color: var(--card-background);
   padding: 1em;
   margin-bottom: 1em;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 }
 
-/* Home Component Styles */
 .home {
   text-align: center;
   padding: 2em;
@@ -121,10 +123,9 @@ button[type="submit"]:hover {
   color: #555;
 }
 
-/* Workouts Component Styles */
 .workouts {
   padding: 1em;
-  background-color: var(--secondary-color);
+  background-color: var(--card-background);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   margin-bottom: 1em;
@@ -142,7 +143,7 @@ button[type="submit"]:hover {
 }
 
 .workout-card {
-  background-color: white;
+  background-color: var(--card-background);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   margin: 1em;
@@ -150,114 +151,65 @@ button[type="submit"]:hover {
   width: 200px;
   text-align: center;
   transition: transform 0.2s;
+  cursor: pointer;
 }
 
 .workout-card:hover {
   transform: scale(1.05);
 }
 
+.workout-card.completed {
+  background-color: #e0f7fa; /* Light teal for completed workouts */
+  border-left: 4px solid #03dac6;
+}
+
 .workout-card h3 {
   color: var(--primary-color);
 }
 
-.workout-card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.workout-card li {
-  padding: 0.5em 0;
-  border-bottom: 1px solid #eee;
-}
-
-.workout-card li:last-child {
-  border-bottom: none;
-}
-
-/* Custom Workouts Form Styles */
-.custom-workouts-form {
-  background-color: white;
-  padding: 2em;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  max-width: 400px;
-  margin: 2em auto;
-  text-align: center;
-}
-
-.custom-workouts-form h2 {
-  color: var(--primary-color);
-}
-
-.custom-workouts-form input, .custom-workouts-form select {
-  width: 100%;
-  padding: 0.5em;
-  margin-bottom: 1em;
-  border: 1px solid #ccc;
-  border-radius: var(--border-radius);
-}
-
-.custom-workouts-form button {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 0.5em 1em;
-  border: none;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-  font-size: 1em;
-  transition: background-color 0.3s;
-}
-
-.custom-workouts-form button:hover {
-  background-color: var(--button-hover-color);
-}
-
-.custom-workouts-form .error {
-  color: red;
-  margin-bottom: 1em;
-}
-
-/* Profile Component Styles */
-.profile {
-  background-color: white;
-  padding: 2em;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  max-width: 400px;
-  margin: 2em auto;
-  text-align: center;
-}
-
-.profile h2 {
-  color: var(--primary-color);
-}
-
-.profile img {
-  border-radius: 50%;
-  margin-bottom: 1em;
-}
-
-.profile p {
+.workout-card p {
   margin: 0.5em 0;
 }
 
-.profile-edit-card {
-  background-color: var(--secondary-color);
+.workout-card input {
+  width: 100%;
+  padding: 0.2em;
+  background-color: var(--input-background);
+  border: 1px solid var(--input-border);
+  border-radius: var(--border-radius);
+}
+
+.checkmark {
+  color: #03dac6;
+  font-size: 1.5em;
+}
+
+.exercise-details {
+  background-color: var(--card-background);
   padding: 1em;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
+  margin-top: 1em;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 1em;
 }
 
-.profile-edit-card input {
-  width: 100%;
+.search-input {
+  width: 70%;
   padding: 0.5em;
-  margin-bottom: 1em;
-  border: 1px solid #ccc;
+  margin-right: 0.5em;
+  background-color: var(--input-background);
+  border: 1px solid var(--input-border);
   border-radius: var(--border-radius);
 }
 
-.profile button {
+.search-button {
   background-color: var(--primary-color);
   color: white;
   padding: 0.5em 1em;
@@ -268,10 +220,41 @@ button[type="submit"]:hover {
   transition: background-color 0.3s;
 }
 
-.profile button:hover {
+.search-button:hover {
   background-color: var(--button-hover-color);
 }
 
+.exercise-list {
+  margin-top: 1em;
+}
+
+.exercise-item {
+  background-color: var(--card-background);
+  padding: 1em;
+  margin: 0.5em 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.exercise-item:hover {
+  transform: scale(1.05);
+}
+
+.exercise-item p {
+  margin: 0;
+}
+
+.exercise-item a {
+  margin-left: 10px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.exercise-item a:hover {
+  text-decoration: underline;
+}
 
 @media (max-width: 768px) {
   .workout-cards {
@@ -285,10 +268,15 @@ button[type="submit"]:hover {
   }
 }
 
-
-
-
-
-
-
-
+.profile {
+  background-color: var(--card-background);
+  padding: 2em;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

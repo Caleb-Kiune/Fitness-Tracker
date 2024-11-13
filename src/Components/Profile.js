@@ -96,13 +96,6 @@ function Profile() {
             onChange={handleChange}
           />
           <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={updatedUser.email}
-            onChange={handleChange}
-          />
-          <input
             type="file"
             accept="image/*"
             onChange={handleFileChange}
@@ -117,7 +110,6 @@ function Profile() {
           <p>Current Weight: {user.currentWeight} kg</p>
           <p>Target Weight: {user.targetWeight} kg</p>
           <p>Height: {user.height} cm</p>
-          <p>Email: {user.email}</p>
           <button onClick={handleEdit}>Edit Profile</button>
         </div>
       )}
