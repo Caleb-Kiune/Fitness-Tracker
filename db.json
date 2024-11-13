@@ -89,6 +89,15 @@
       "weight": "5",
       "category": "Shoulders",
       "completed": false
+    },
+    {
+      "id": "6692",
+      "name": "ww",
+      "sets": "22",
+      "reps": "22",
+      "weight": "22",
+      "category": "Chest",
+      "completed": false
     }
   ]
 }

@@ -15,7 +15,7 @@ function App() {
   const baseURL = "https://my-json-server.typicode.com/Caleb-Kiune/Fitness-Tracker/workouts"
 
   useEffect(() => {
-    fetch(baseURL)
+    fetch('http://localhost:3001/workouts')
       .then(response => response.json())
       .then(data => setWorkouts(data))
       .catch(error => console.error('Error fetching data:', error));
@@ -23,9 +23,9 @@ function App() {
 
   const addWorkout = (newWorkout) => {
     console.log('Adding workout:', newWorkout);
-    fetch(baseURL, {
+    fetch('http://localhost:3001/workouts', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' }, 
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newWorkout)
     })
     .then(response => {
