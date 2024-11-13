@@ -1,23 +1,23 @@
 {
   "workouts": [
     {
-      "id": "1",
-      "name": "Bench Press",
-      "sets": "4",
-      "reps": "10",
-      "weight": "50",
+      "id": 1731523316745,
+      "name": "a",
+      "sets": "5",
+      "reps": "5",
+      "weight": "5",
       "category": "Chest",
-      "day": "Monday",
+      "day": "Thursday",
       "completed": false
     },
     {
-      "id": "2",
-      "name": "Squat",
-      "sets": "4",
-      "reps": "12",
-      "weight": "80",
+      "id": 1731523326342,
+      "name": "s",
+      "sets": "7",
+      "reps": "7",
+      "weight": "7",
       "category": "Legs",
-      "day": "Tuesday",
+      "day": "Monday",
       "completed": false
     }
   ]

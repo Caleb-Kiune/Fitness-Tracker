@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import '../App.css';  // Ensure your CSS includes styles for the cards
+import React, { useState, useEffect } from 'react';
+import '../App.css';
 
-function CustomWorkouts({ addWorkout }) {
+function CustomWorkouts() {
   const [workout, setWorkout] = useState({
     name: '',
     sets: '',
@@ -13,6 +13,14 @@ function CustomWorkouts({ addWorkout }) {
   const [workoutList, setWorkoutList] = useState([]);
   const [isEditing, setIsEditing] = useState(false);
   const [editingIndex, setEditingIndex] = useState(null);
+
+  // Fetch initial workout data
+  useEffect(() => {
+    fetch('http://localhost:3001/workouts')
+      .then(response => response.json())
+      .then(data => setWorkoutList(data))
+      .catch(error => console.error('Error fetching data:', error));
+  }, []);
 
   const handleChange = (e) => {
     setWorkout({
@@ -32,20 +40,37 @@ function CustomWorkouts({ addWorkout }) {
 
     let updatedList;
     if (isEditing) {
+      const updatedWorkout = { ...workout, id: workoutList[editingIndex].id };
       updatedList = workoutList.map((item, index) =>
-        index === editingIndex ? { ...workout } : item
+        index === editingIndex ? updatedWorkout : item
       );
-      setIsEditing(false);
+
+      fetch(`http://localhost:3001/workouts/${updatedWorkout.id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(updatedWorkout),
+      })
+        .then(() => setIsEditing(false))
+        .catch(error => console.error('Error updating data:', error));
+
       setEditingIndex(null);
     } else {
-      const newWorkout = { ...workout, completed: false };
-      addWorkout(newWorkout);
+      const newWorkout = { ...workout, completed: false, id: Date.now() };
       updatedList = [...workoutList, newWorkout];
+
+      fetch('http://localhost:3001/workouts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newWorkout),
+      })
+        .catch(error => console.error('Error adding data:', error));
     }
 
     setWorkoutList(updatedList);
-    localStorage.setItem('workoutList', JSON.stringify(updatedList)); // Save to local storage
-
     setWorkout({ name: '', sets: '', reps: '', weight: '', category: 'Chest', day: 'Monday' });
   };
 
@@ -56,17 +81,32 @@ function CustomWorkouts({ addWorkout }) {
   };
 
   const handleDelete = (index) => {
+    const workoutToDelete = workoutList[index];
     const updatedList = workoutList.filter((_, i) => i !== index);
-    setWorkoutList(updatedList);
-    localStorage.setItem('workoutList', JSON.stringify(updatedList)); // Save to local storage
+
+    fetch(`http://localhost:3001/workouts/${workoutToDelete.id}`, {
+      method: 'DELETE',
+    })
+      .then(() => setWorkoutList(updatedList))
+      .catch(error => console.error('Error deleting data:', error));
   };
 
   const toggleComplete = (index) => {
-    const updatedList = workoutList.map((workout, i) => 
-      i === index ? { ...workout, completed: !workout.completed } : workout
+    const updatedWorkout = { ...workoutList[index], completed: !workoutList[index].completed };
+    const updatedList = workoutList.map((workout, i) =>
+      i === index ? updatedWorkout : workout
     );
+
+    fetch(`http://localhost:3001/workouts/${updatedWorkout.id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(updatedWorkout),
+    })
+      .catch(error => console.error('Error updating data:', error));
+
     setWorkoutList(updatedList);
-    localStorage.setItem('workoutList', JSON.stringify(updatedList)); // Save to local storage
   };
 
   return (
