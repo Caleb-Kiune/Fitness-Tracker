@@ -12,8 +12,10 @@ import './App.css';
 function App() {
   const [workouts, setWorkouts] = useState([]);
 
+  const baseURL = "https://my-json-server.typicode.com/Caleb-Kiune/Fitness-Tracker/workouts"
+
   useEffect(() => {
-    fetch('http://localhost:3001/workouts')
+    fetch(baseURL)
       .then(response => response.json())
       .then(data => setWorkouts(data))
       .catch(error => console.error('Error fetching data:', error));
@@ -21,9 +23,9 @@ function App() {
 
   const addWorkout = (newWorkout) => {
     console.log('Adding workout:', newWorkout);
-    fetch('http://localhost:3001/workouts', {
+    fetch(baseURL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json' }, 
       body: JSON.stringify(newWorkout)
     })
     .then(response => {
