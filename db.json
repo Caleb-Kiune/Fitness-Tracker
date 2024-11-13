@@ -28,7 +28,7 @@
       "weight": "50",
       "category": "Back",
       "day": "Friday",
-      "completed": false
+      "completed": true
     },
     {
       "id": "1731524731857",
@@ -38,7 +38,7 @@
       "weight": "5",
       "category": "Chest",
       "day": "Monday",
-      "completed": false
+      "completed": true
     },
     {
       "id": 1731525700471,
