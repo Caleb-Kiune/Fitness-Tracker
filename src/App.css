@@ -358,5 +358,45 @@ button[type="submit"]:hover {
   margin-bottom: 1em;
 }
 
+.workout-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.workout-card {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 16px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.workout-card:hover {
+  transform: scale(1.05);
+}
+
+.workout-card h4 {
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.workout-card p {
+  margin: 4px 0;
+}
+
+.workout-card.completed {
+  background-color: #e0f7fa; /* Light teal for completed workouts */
+  border-left: 4px solid #03dac6;
+}
+
+.workout-card .checkmark {
+  color: #03dac6;
+  font-size: 1.5em;
+}
+
+
 
 

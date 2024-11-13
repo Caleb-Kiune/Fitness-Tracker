@@ -1,102 +1,23 @@
 {
   "workouts": [
     {
-      "id": "4e49",
-      "name": "bench press",
-      "sets": "4",
-      "reps": "4",
-      "weight": "4",
-      "category": "Chest",
-      "completed": false
-    },
-    {
-      "id": "66d5",
-      "name": "7",
-      "sets": "7",
-      "reps": "7",
-      "weight": "1",
-      "category": "Chest",
-      "completed": false
-    },
-    {
-      "id": "e187",
-      "name": "5",
-      "sets": "5",
-      "reps": "5",
-      "weight": "5",
-      "category": "Chest",
-      "completed": false
-    },
-    {
-      "id": "fc8f",
-      "name": "test",
+      "id": "1",
+      "name": "Bench Press",
       "sets": "4",
       "reps": "10",
-      "weight": "40",
+      "weight": "50",
       "category": "Chest",
+      "day": "Monday",
       "completed": false
     },
     {
-      "id": "8c06",
-      "name": "test2",
+      "id": "2",
+      "name": "Squat",
       "sets": "4",
-      "reps": "4",
-      "weight": "4",
+      "reps": "12",
+      "weight": "80",
       "category": "Legs",
-      "completed": false
-    },
-    {
-      "id": "c17b",
-      "name": "t",
-      "sets": "1",
-      "reps": "6",
-      "weight": "6",
-      "category": "Chest",
-      "completed": false
-    },
-    {
-      "id": "a087",
-      "name": "6",
-      "sets": "6",
-      "reps": "6",
-      "weight": "6",
-      "category": "Chest",
-      "completed": false
-    },
-    {
-      "id": "7aa3",
-      "name": "5",
-      "sets": "5",
-      "reps": "5",
-      "weight": "5",
-      "category": "Shoulders",
-      "completed": false
-    },
-    {
-      "id": "9714",
-      "name": "1",
-      "sets": "1",
-      "reps": "1",
-      "weight": "1",
-      "category": "Chest",
-      "completed": false
-    },
-    {
-      "id": "69b1",
-      "name": "bp",
-      "sets": "4",
-      "reps": "4",
-      "weight": "5",
-      "category": "Shoulders",
-      "completed": false
-    },
-    {
-      "id": "6692",
-      "name": "ww",
-      "sets": "22",
-      "reps": "22",
-      "weight": "22",
-      "category": "Chest",
+      "day": "Tuesday",
       "completed": false
     }
   ]

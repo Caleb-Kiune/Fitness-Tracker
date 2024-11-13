@@ -12,7 +12,7 @@ import './App.css';
 function App() {
   const [workouts, setWorkouts] = useState([]);
 
-  const baseURL = "https://my-json-server.typicode.com/Caleb-Kiune/Fitness-Tracker/workouts"
+ // const baseURL = "https://my-json-server.typicode.com/Caleb-Kiune/Fitness-Tracker/workouts"
 
   useEffect(() => {
     fetch('http://localhost:3001/workouts')
