@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
 const Report = () => {
-  const [workouts, setWorkouts] = useState([]);
   const [completedWorkouts, setCompletedWorkouts] = useState([]);
 
   useEffect(() => {
@@ -9,7 +8,6 @@ const Report = () => {
       .then(response => response.json())
       .then(data => {
         console.log("Fetched workouts:", data); // Debug log
-        setWorkouts(data);
         const completed = data.filter(workout => workout.completed);
         console.log("Completed workouts:", completed); // Debug log
         setCompletedWorkouts(completed);
@@ -26,7 +24,8 @@ const Report = () => {
           <ul>
             {completedWorkouts.map((workout, index) => (
               <li key={index} className="report-item">
-                <span>{workout.date || 'N/A'}</span> - {workout.name}: {workout.sets} sets x {workout.reps} reps, {workout.weight} kg
+                {workout.date && <span>{workout.date} - </span>}
+                {workout.name}: {workout.sets} sets x {workout.reps} reps, {workout.weight} kg, Day: {workout.day}
               </li>
             ))}
           </ul>

@@ -21,7 +21,7 @@
       "completed": true
     },
     {
-      "id": 1731524454460,
+      "id": "1731524454460",
       "name": "pulldown",
       "sets": "4",
       "reps": "8",
@@ -31,8 +31,18 @@
       "completed": false
     },
     {
-      "id": 1731524731857,
-      "name": "x",
+      "id": "1731524731857",
+      "name": "lateral raise",
+      "sets": "5",
+      "reps": "5",
+      "weight": "5",
+      "category": "Chest",
+      "day": "Monday",
+      "completed": false
+    },
+    {
+      "id": 1731525700471,
+      "name": "y",
       "sets": "5",
       "reps": "5",
       "weight": "5",
