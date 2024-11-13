@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function CustomWorkouts() {
+function CustomWorkouts({ addWorkout }) {
   const [name, setName] = useState('');
   const [sets, setSets] = useState('');
   const [reps, setReps] = useState('');
@@ -8,7 +8,6 @@ function CustomWorkouts() {
   const [category, setCategory] = useState('Chest');
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
-  const [workouts, setWorkouts] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,7 +22,7 @@ function CustomWorkouts() {
       return;
     }
     const newWorkout = { name, sets, reps, weight, category, completed: false };
-    setWorkouts([...workouts, newWorkout]);
+    addWorkout(newWorkout);  // Calls addWorkout to update the state in App.js
     setName('');
     setSets('');
     setReps('');
@@ -31,12 +30,6 @@ function CustomWorkouts() {
     setCategory('Chest');
     setError('');
     setSuccess('Workout added!');
-  };
-
-  const toggleCompleted = (index) => {
-    const updatedWorkouts = [...workouts];
-    updatedWorkouts[index].completed = !updatedWorkouts[index].completed;
-    setWorkouts(updatedWorkouts);
   };
 
   return (
@@ -80,20 +73,6 @@ function CustomWorkouts() {
         </div>
         <button type="submit">Add Workout</button>
       </form>
-      <div className="workout-cards">
-        {workouts.map((workout, index) => (
-          <div 
-            key={index} 
-            className={`workout-card ${workout.completed ? 'completed' : ''}`}
-            onClick={() => toggleCompleted(index)}
-          >
-            <h3>{workout.category}</h3>
-            <p>{workout.name}</p>
-            <p>{workout.sets} Sets x {workout.reps} Reps x {workout.weight}kg</p>
-            {workout.completed && <span className="checkmark">✔️</span>}
-          </div>
-        ))}
-      </div>
     </div>
   );
 }

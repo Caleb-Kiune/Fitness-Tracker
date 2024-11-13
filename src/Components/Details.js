@@ -5,6 +5,7 @@ function Details() {
   const [searchTerm, setSearchTerm] = useState('');
   const [exercises, setExercises] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
@@ -12,6 +13,7 @@ function Details() {
 
   const handleSearch = () => {
     setIsLoading(true);
+    setError('');
     fetch(`https://api.algobook.info/v1/gym/exercises/${searchTerm}`)
       .then(response => response.json())
       .then(data => {
@@ -20,13 +22,14 @@ function Details() {
       })
       .catch(error => {
         console.error('Error fetching data:', error);
+        setError('Failed to fetch exercises. Please try again.');
         setIsLoading(false);
       });
   };
 
   return (
     <div>
-      <h2>Exercises</h2>
+      <h2>View Exercises</h2>
       <div className="search-form">
         <input
           type="text"
@@ -39,6 +42,7 @@ function Details() {
       </div>
 
       {isLoading && <p>Loading...</p>}
+      {error && <p className="error">{error}</p>}
 
       <div className="exercise-list">
         {exercises.map((exercise, index) => (
