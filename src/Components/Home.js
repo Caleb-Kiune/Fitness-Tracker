@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="home">
       <h1>Welcome to Fitness Tracker</h1>
-      <p>Your journey to fitness starts here!</p>
+      <h4>Your journey to fitness starts here!</h4>
       <div className="quick-links">
         <h2>Quick Links</h2>
         <ul>
@@ -15,13 +15,13 @@ function Home() {
       </div>
       <div className="overview">
         <h2>Overview</h2>
-        <p>Recent Workouts: 5</p>
-        <p>Total Reps: 120</p>
+        <p>Best 1 RM: 100KG</p>
+        <p>Max Volume: 4200KG</p>
         <p>Achievements: 3</p>
       </div>
       <div className="motivational-quote">
         <h2>Stay Motivated</h2>
-        <p>"The only bad workout is the one that didn’t happen."</p>
+        <h4>"The only bad workout is the one that didn’t happen."</h4>
       </div>
     </div>
   );
