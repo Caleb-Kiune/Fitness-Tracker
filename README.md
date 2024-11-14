@@ -93,7 +93,7 @@ Caleb Kiune
 
 - Use the search bar to find exercises by name or category.
 
-- View detailed information about each exercise, including sets, reps, and weight.
+- Click on highlighted `Details` to view detailed information about each exercise.
 
 ## **Profile**
 1. View Profile:
