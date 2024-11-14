@@ -16,7 +16,7 @@ const Report = () => {
   }, []);
 
   return (
-    <div className="report">
+    <div className="report-container">
       <h1>My Reports</h1>
       <div className="report-summary">
         <h2>Completed Workouts</h2>

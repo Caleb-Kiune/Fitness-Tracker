@@ -110,7 +110,7 @@ function CustomWorkouts() {
   };
 
   return (
-    <div>
+    <div className="custom-workouts-container">
       <form onSubmit={handleSubmit} className="custom-workouts-form">
         <h2>{isEditing ? 'Edit Workout' : 'Add Custom Workout'}</h2>
         <div className="form-row">

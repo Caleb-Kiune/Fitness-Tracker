@@ -397,6 +397,124 @@ button[type="submit"]:hover {
   font-size: 1.5em;
 }
 
+.home {
+  text-align: center;
+  padding: 2em;
+  background-image: url('/public/pexels-leonardho-1552242.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Adjust text color to ensure it's readable */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+}
+
+/* Optional: Add a semi-transparent background to text areas for better readability */
+.quick-links, .overview, .motivational-quote {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 1em;
+  border-radius: var(--border-radius);
+}
+
+.workouts {
+  padding: 1em;
+  background-image: url('/public/pexels-leonardho-1552252.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Ensure text is readable */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.workout-cards {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for workout cards */
+  border-radius: var(--border-radius);
+  padding: 1em;
+}
+
+.custom-workouts-container {
+  background-image: url('/public/pexels-victorfreitas-841131.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Ensure text is readable */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  padding: 2em;
+}
+
+/* Optional: Add a semi-transparent background to form rows for better readability */
+.custom-workouts-form .form-row {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: var(--border-radius);
+  padding: 1em;
+}
+
+.details-container {
+  background-image: url('/public/pexels-anush-1229356.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Ensure text is readable */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  padding: 2em;
+}
+
+/* Optional: Add a semi-transparent background to list items for better readability */
+.exercise-list .exercise-item {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: var(--border-radius);
+  padding: 1em;
+}
+
+.report-container {
+  background-image: url('/public/pexels-pixabay-163351.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Ensure text is readable */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  padding: 2em;
+}
+
+/* Optional: Add a semi-transparent background to list items for better readability */
+.report-summary {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: var(--border-radius);
+  padding: 1em;
+}
+
+.profile-container {
+  background-image: url('/public/pexels-packermann-878151.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Ensure text is readable */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  padding: 2em;
+}
+
+/* Optional: Add a semi-transparent background to profile details for better readability */
+.profile {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: var(--border-radius);
+  padding: 2em;
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
 
 
 

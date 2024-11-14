@@ -28,7 +28,7 @@ function Details() {
   };
 
   return (
-    <div>
+    <div className="details-container">
       <h2>View Exercises</h2>
       <div className="search-form">
         <input
