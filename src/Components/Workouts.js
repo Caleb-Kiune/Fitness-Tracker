@@ -62,8 +62,8 @@ function Workouts() {
 
   return (
     <div className="workouts">
-      <h2>Workouts by Muscle Group</h2>
-      <select onChange={handleMuscleGroupChange} value={selectedMuscleGroup}>
+      <h2 className='workouts-heading'>Workouts by Muscle Group</h2>
+      <select className='category-button' onChange={handleMuscleGroupChange} value={selectedMuscleGroup}>
         {Object.keys(exercises).map((muscleGroup) => (
           <option key={muscleGroup} value={muscleGroup}>
             {muscleGroup}

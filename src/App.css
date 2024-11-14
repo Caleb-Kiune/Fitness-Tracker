@@ -423,7 +423,7 @@ button[type="submit"]:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white; /* Ensure text is readable */
+  color: rgb(12, 0, 0); /* Ensure text is readable */
   min-height: 100vh; /* Ensure it covers the full viewport height */
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
@@ -521,6 +521,93 @@ body {
   min-height: 100vh; /* Ensure it covers the full viewport height */
   width: 100%; /* Ensure it covers the full width */
 }
+
+/* Styles for category selection button */
+.category-button {
+  background-color: #4dd0e1; /* Lighter teal for contrast */
+  color: black; /* Dark text for readability */
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect for better user experience */
+.category-button:hover {
+  background-color: #00acc1; /* Slightly darker teal on hover */
+  color: white; /* White text on hover */
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Styles for the heading "Workouts by Muscle Group" */
+.workouts-heading {
+  color: #FFD700; /* Bright gold color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a subtle shadow for contrast */
+  font-size: 2em; /* Adjust size as needed */
+  font-weight: bold; /* Make the text bold */
+  margin-bottom: 0.5em; /* Space below the heading */
+}
+
+
+
+
+
+/* Styles for custom workout cards */
+.custom-workout-card {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for readability */
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin: 1em;
+  padding: 1em;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: var(--text-color); /* Ensure text color is readable */
+}
+
+.custom-workout-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.custom-workout-card.completed {
+  background-color: rgba(124, 194, 203, 0.8); /* Light teal for completed workouts */
+  border-left: 4px solid #03dac6; /* Teal border for visual distinction */
+}
+
+.custom-workout-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
+}
+
+.custom-workout-card p {
+  margin: 0.5em 0;
+}
+
+/* Styles for buttons inside workout cards */
+.custom-workout-card button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 0.5em;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.custom-workout-card button:hover {
+  background-color: var(--button-hover-color);
+  transform: scale(1.05);
+}
+
+
+
+
+
 
 
 

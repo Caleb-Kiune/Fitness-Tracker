@@ -41,14 +41,14 @@
       "completed": true
     },
     {
-      "id": 1731525700471,
+      "id": "1731525700471",
       "name": "y",
       "sets": "5",
       "reps": "5",
       "weight": "5",
       "category": "Chest",
       "day": "Monday",
-      "completed": false
+      "completed": true
     }
   ]
 }

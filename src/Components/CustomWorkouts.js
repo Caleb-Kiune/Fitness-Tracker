@@ -14,7 +14,6 @@ function CustomWorkouts() {
   const [isEditing, setIsEditing] = useState(false);
   const [editingIndex, setEditingIndex] = useState(null);
 
-  // Fetch initial workout data
   useEffect(() => {
     fetch('http://localhost:3001/workouts')
       .then(response => response.json())
@@ -165,8 +164,8 @@ function CustomWorkouts() {
       <div className="workout-list">
         <h3>Workouts</h3>
         {workoutList.map((workout, index) => (
-          <div key={index} className={`workout-card ${workout.completed ? 'completed' : ''}`}>
-            <h4>{workout.name}</h4>
+          <div key={index} className={`custom-workout-card ${workout.completed ? 'completed' : ''}`}>
+            <h3>{workout.name}</h3>
             <p>Sets: {workout.sets}</p>
             <p>Reps: {workout.reps}</p>
             <p>Weight: {workout.weight} kg</p>
