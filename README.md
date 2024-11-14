@@ -34,7 +34,7 @@ Caleb Kiune
 
 ## **Access and Installation**
 - Access the Live Site
-- Navigate to the live site: `https://cheerful-paprenjak-6215c2.netlify.app/`
+- Navigate to the live site: `https://fitness-tracker-42anzlrmw-caleb-kiunes-projects.vercel.app/`
 
 ## **Project Setup Instructions**
 - Clone the Repository:
