@@ -18,7 +18,7 @@
       "weight": "80",
       "category": "Legs",
       "day": "Tuesday",
-      "completed": true
+      "completed": false
     },
     {
       "id": "1731524454460",
@@ -41,7 +41,7 @@
       "completed": true
     },
     {
-      "id": 1731563054019,
+      "id": "1731563054019",
       "name": "Row",
       "sets": "4",
       "reps": "8",
@@ -51,23 +51,23 @@
       "completed": false
     },
     {
-      "id": 1731563076268,
-      "name": "leg press",
+      "id": "1731563076268",
+      "name": "Leg press",
       "sets": "3",
       "reps": "10",
       "weight": "100",
       "category": "Chest",
       "day": "Thursday",
-      "completed": false
+      "completed": true
     },
     {
-      "id": 1731563196622,
-      "name": "shoulder press",
-      "sets": "5",
-      "reps": "5",
-      "weight": "5",
+      "id": "1731563196622",
+      "name": "Shoulder Press",
+      "sets": "4",
+      "reps": "8",
+      "weight": "40",
       "category": "Shoulders",
-      "day": "Monday",
+      "day": "Saturday",
       "completed": false
     }
   ]

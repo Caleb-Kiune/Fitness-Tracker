@@ -606,6 +606,49 @@ body {
 
 
 
+.report-container {
+  background-color: var(--card-background);
+  padding: 2em;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  max-width: 800px;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.report-summary {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 1em;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.report-summary h2 {
+  color: var(--primary-color);
+  margin-bottom: 1em;
+}
+
+.report-item {
+  background-color: rgba(128, 128, 128, 0.242);
+  padding: 1em;
+  margin: 0.5em 0;
+  border-radius: var(--border-radius);
+  box-shadow: black;
+  color: white;
+  text-align: left;
+}
+
+.report-item span {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+
+
+
+
+
 
 
 
