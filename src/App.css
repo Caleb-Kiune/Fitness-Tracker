@@ -297,7 +297,7 @@ button[type="submit"]:hover {
 }
 
 .custom-workouts-form {
-  background-color: var(--card-background);
+  background-color:rgba(0, 0, 0, 0.489);
   padding: 2em;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
@@ -543,8 +543,8 @@ body {
 
 /* Styles for the heading "Workouts by Muscle Group" */
 .workouts-heading {
-  color: #FFD700; /* Bright gold color */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a subtle shadow for contrast */
+  color: white; /* Bright gold color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0); /* Add a subtle shadow for contrast */
   font-size: 2em; /* Adjust size as needed */
   font-weight: bold; /* Make the text bold */
   margin-bottom: 0.5em; /* Space below the heading */
@@ -643,6 +643,8 @@ body {
   font-weight: bold;
   color: var(--secondary-color);
 }
+
+
 
 
 

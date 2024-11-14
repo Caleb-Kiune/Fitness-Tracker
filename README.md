@@ -51,9 +51,13 @@ Caleb Kiune
 - Start the React App:
  `npm start`
 
-## **Application Usage**
+## **Home Page**
 - Access the Home Page
 - Navigate to the home page to find quick links and an     overview of your fitness journey.
+
+## **Workouts**
+- Click on the drop down menu and select to view varoius musle categories.
+- View training routines based on muscle related muscle groups.
 
 ## **Custom Workouts**
 1. Add a Workout:
