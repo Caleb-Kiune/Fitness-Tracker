@@ -1,16 +1,25 @@
-# **FITNESS TRACKER**
-## **AUTHOR**
+## **Fitness Tracker**
+
+## **Author**
 Caleb Kiune
-## **PROJECT OVERVIEW**
-Fitness Tracker is a comprehensive web application built with React and json-server that helps users manage and track their fitness routines. This application allows users to create and customize their workouts, view exercise details, update their personal profiles, and generate reports on completed workouts. The application is designed to be user-friendly and responsive, ensuring a seamless experience across various devices.
-## **TECHNOLOGIES USED**
+
+## **Project Overview**
+- Fitness Tracker is a comprehensive web application built with React and json-server that helps users manage and track their fitness routines. This application allows users to create and customize their workouts, view exercise details, update their personal profiles, and generate reports on completed workouts. The application is designed to be user-friendly and responsive, ensuring a seamless experience across various devices.
+
+## **Technologies Used**
 - React - Frontend
+
 - json-server - Backend
+
 - CSS - Styling
-- Visual Studio Code
-- Algobook gym API
-- Google Chrome Browser
-## **PROJECT FEATURES**
+
+- Visual Studio Code - Code Editor
+
+- Algobook gym API - External API
+
+- Google Chrome - Browser
+
+## **Project Features**
 - Custom Workouts: Users can add, edit, and delete custom workouts. Each workout includes details such as the exercise name, sets, reps, weight, category, and the day of the week.
 
 - Exercise Details: Users can search for and view detailed information about various exercises.
@@ -21,76 +30,93 @@ Fitness Tracker is a comprehensive web application built with React and json-ser
 
 - Responsive Design: The application features a responsive design, ensuring it works well on both desktop and mobile devices.
 
+- Workouts by Muscle Group: Users can categorize and view workouts based on different muscle groups. This includes selecting specific categories such as Chest, Back, Legs, Arms, and Shoulders to focus on targeted muscle areas.
 
+## **Access and Installation**
+- Access the Live Site
+- Navigate to the live site: `https://fitness-tracker-lovat.vercel.app/.`
 
-## **ACCESS AND INSTALLATION**
-- Find my GitHub repository at `https://github.com/Caleb-Kiune/Fitness-Tracker.git`
-- Navigate to the about section and locate the web link.alternatively use `https://fitness-tracker-lovat.vercel.app/` to access the web application
+## **Project Setup Instructions**
+- Clone the Repository:
+- git clone `https://github.com/Caleb-Kiune/Fitness-Tracker.git`
 
-## **APPLICATION USAGE**
-- Access the Home Page: Navigate to the home page to find quick links and an overview of your fitness journey.
+- Navigate to the Project Directory:
+- `cd Fitness-Tracker`
 
-- Custom Workouts
-1. Go to the "Custom Workouts" section.
+- Install Dependencies:
+ `npm install`
+ `Start the json-server`
+ `npx json-server --watch db.json --port 3001`
 
-2. Fill in the workout details (name, sets, reps, weight, category, and day).
+- Start the React App:
+ `npm start`
 
-3. Click the "Add Workout" button to save the new workout.
+## **Application Usage**
+- Access the Home Page
+- Navigate to the home page to find quick links and an     overview of your fitness journey.
 
-4. Edit a Workout:
+## **Custom Workouts**
+1. Add a Workout:
 
-5. In the "Custom Workouts" section, find the workout you want to edit.
+- Go to the "Custom Workouts" section.
 
-6. Click the "Edit" button next to the workout.
+- Fill in the workout details (name, sets, reps, weight, category, and day).
 
-7. Update the workout details as needed.
+- Click the "Add Workout" button to save the new workout.
 
-8. Click the "Save Changes" button to update the workout.
+2. Edit a Workout:
 
-- Delete a Workout:
+- In the "Custom Workouts" section, find the workout you want to edit.
 
-1. In the "Custom Workouts" section, find the workout you want to delete.
+- Click the "Edit" button next to the workout.
 
-2. Click the "Delete" button next to the workout.
+- Update the workout details as needed.
 
-- Mark as Complete:
+- Click the "Save Changes" button to update the workout.
 
-1. In the "Custom Workouts" section, find the workout you want to mark as complete.
+3. Delete a Workout:
 
-2. Click the "Mark as Complete" button.
+- In the "Custom Workouts" section, find the workout you want to delete.
 
-- Exercises
+- Click the "Delete" button next to the workout.
+
+4. Mark as Complete:
+
+- In the "Custom Workouts" section, find the workout you want to mark as complete.
+
+- Click the "Mark as Complete" button.
+
+## **Exercises**
 1. Search Exercises:
 
-1. Go to the "Exercises" section.
+- Go to the "Exercises" section.
 
-3. Use the search bar to find exercises by name or category.
+- Use the search bar to find exercises by name or category.
 
-4. View detailed information about each exercise, including sets, reps, and weight.
+- View detailed information about each exercise, including sets, reps, and weight.
 
-- Profile
-1. Go to the "Profile" section to view your personal details.
+## **Profile**
+1. View Profile:
 
-- Edit Profile:
+- Go to the "Profile" section to view your personal details.
 
-1. In the "Profile" section, click the "Edit Profile" button.
+2. Edit Profile:
 
-2. Update your personal details (name, age, gender, current weight, target weight, height, email, and profile picture).
+- In the "Profile" section, click the "Edit Profile" button.
 
-3. Click the "Save" button to update your profile.
+- Update your personal details (name, age, gender, current weight, target weight, height, email, and profile picture).
 
-- Reports
-1. Go to the "Reports" section.
+- Click the "Save" button to update your profile.
 
-2. View a summary of all completed workouts, including details such as the date, exercise name, sets, reps, weight, and day.
+## **Reports**
+1. View Reports:
 
-## CONTRIBUTIONS
-All contributions are welcome.
+- Go to the "Reports" section.
 
-## LICENSE
-This project is under MIT license.
+- View a summary of all completed workouts, including details such as the date, exercise name, sets, reps, weight, and day.
 
+## **Contributions**
+- All contributions are welcome. Feel free to open an issue or submit a pull request.
 
-
-
-
+## **License**
+- This project is licensed under the MIT License.
