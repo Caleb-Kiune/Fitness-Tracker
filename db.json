@@ -18,7 +18,7 @@
       "weight": "80",
       "category": "Legs",
       "day": "Tuesday",
-      "completed": false
+      "completed": true
     },
     {
       "id": "1731524454460",
@@ -48,7 +48,7 @@
       "weight": "60",
       "category": "Back",
       "day": "Monday",
-      "completed": false
+      "completed": true
     },
     {
       "id": "1731563076268",
@@ -68,7 +68,7 @@
       "weight": "40",
       "category": "Shoulders",
       "day": "Saturday",
-      "completed": false
+      "completed": true
     }
   ]
 }

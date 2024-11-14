@@ -34,7 +34,7 @@ Caleb Kiune
 
 ## **Access and Installation**
 - Access the Live Site
-- Navigate to the live site: `https://fitness-tracker-lovat.vercel.app/.`
+- Navigate to the live site: `https://fitness-tracker-orcin-six.vercel.app/.`
 
 ## **Project Setup Instructions**
 - Clone the Repository:
