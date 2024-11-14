@@ -22,17 +22,17 @@
     },
     {
       "id": "1731524454460",
-      "name": "pulldown",
+      "name": "Deadlift",
       "sets": "4",
       "reps": "8",
-      "weight": "50",
+      "weight": "100",
       "category": "Back",
       "day": "Friday",
       "completed": true
     },
     {
       "id": "1731524731857",
-      "name": "lateral raise",
+      "name": "Lateral raise",
       "sets": "5",
       "reps": "5",
       "weight": "5",
@@ -41,14 +41,34 @@
       "completed": true
     },
     {
-      "id": "1731525700471",
-      "name": "y",
+      "id": 1731563054019,
+      "name": "Row",
+      "sets": "4",
+      "reps": "8",
+      "weight": "60",
+      "category": "Back",
+      "day": "Monday",
+      "completed": false
+    },
+    {
+      "id": 1731563076268,
+      "name": "leg press",
+      "sets": "3",
+      "reps": "10",
+      "weight": "100",
+      "category": "Chest",
+      "day": "Thursday",
+      "completed": false
+    },
+    {
+      "id": 1731563196622,
+      "name": "shoulder press",
       "sets": "5",
       "reps": "5",
       "weight": "5",
-      "category": "Chest",
+      "category": "Shoulders",
       "day": "Monday",
-      "completed": true
+      "completed": false
     }
   ]
 }
