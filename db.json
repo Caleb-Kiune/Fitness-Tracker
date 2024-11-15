@@ -69,16 +69,6 @@
       "category": "Shoulders",
       "day": "Monday",
       "completed": true
-    },
-    {
-      "id": 1731639432194,
-      "name": "test",
-      "sets": "4",
-      "reps": "4",
-      "weight": "4",
-      "category": "Chest",
-      "day": "Monday",
-      "completed": false
     }
   ]
 }

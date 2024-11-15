@@ -34,7 +34,7 @@ Caleb Kiune
 
 ## **Access and Installation**
 - Access the Live Site
-- Navigate to the live site: `https://fitness-tracker-42anzlrmw-caleb-kiunes-projects.vercel.app/`
+- Navigate to the live site: `https://fitness-tracker-seven-roan.vercel.app/`
 
 ## **Project Setup Instructions**
 - Clone the Repository:
