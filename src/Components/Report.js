@@ -4,7 +4,7 @@ const Report = () => {
   const [completedWorkouts, setCompletedWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/workouts')
+    fetch('https://testone-dn8f.onrender.com/workouts')
       .then(response => response.json())
       .then(data => {
         console.log("Fetched workouts:", data); // Debug log

@@ -5,7 +5,7 @@
       "name": "Bench Press",
       "sets": "4",
       "reps": "10",
-      "weight": "50",
+      "weight": "60",
       "category": "Chest",
       "day": "Monday",
       "completed": true
@@ -17,7 +17,7 @@
       "reps": "12",
       "weight": "80",
       "category": "Legs",
-      "day": "Tuesday",
+      "day": "Saturday",
       "completed": true
     },
     {
@@ -26,7 +26,7 @@
       "sets": "4",
       "reps": "8",
       "weight": "100",
-      "category": "Back",
+      "category": "Legs",
       "day": "Friday",
       "completed": true
     },
@@ -51,24 +51,34 @@
       "completed": true
     },
     {
-      "id": "1731563076268",
-      "name": "Leg press",
-      "sets": "3",
-      "reps": "10",
-      "weight": "100",
+      "id": "1731614616072",
+      "name": "Dumbell press",
+      "sets": "4",
+      "reps": "12",
+      "weight": "40",
       "category": "Chest",
-      "day": "Thursday",
+      "day": "Wednesday",
       "completed": true
     },
     {
-      "id": "1731600130164",
+      "id": "1731614792048",
       "name": "Shoulder Press",
       "sets": "4",
-      "reps": "8",
-      "weight": "40",
+      "reps": "4",
+      "weight": "4",
       "category": "Shoulders",
-      "day": "Sunday",
+      "day": "Monday",
       "completed": true
+    },
+    {
+      "id": 1731639432194,
+      "name": "test",
+      "sets": "4",
+      "reps": "4",
+      "weight": "4",
+      "category": "Chest",
+      "day": "Monday",
+      "completed": false
     }
   ]
 }

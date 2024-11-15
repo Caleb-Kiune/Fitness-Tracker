@@ -14,12 +14,14 @@ function CustomWorkouts() {
   const [isEditing, setIsEditing] = useState(false);
   const [editingIndex, setEditingIndex] = useState(null);
 
+  const apiURL = 'https://testone-dn8f.onrender.com/workouts';
+
   useEffect(() => {
-    fetch('http://localhost:3001/workouts')
+    fetch(apiURL)
       .then(response => response.json())
       .then(data => setWorkoutList(data))
       .catch(error => console.error('Error fetching data:', error));
-  }, []);
+  }, [apiURL]);
 
   const handleChange = (e) => {
     setWorkout({
@@ -44,7 +46,7 @@ function CustomWorkouts() {
         index === editingIndex ? updatedWorkout : item
       );
 
-      fetch(`http://localhost:3001/workouts/${updatedWorkout.id}`, {
+      fetch(`${apiURL}/${updatedWorkout.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -59,7 +61,7 @@ function CustomWorkouts() {
       const newWorkout = { ...workout, completed: false, id: Date.now() };
       updatedList = [...workoutList, newWorkout];
 
-      fetch('http://localhost:3001/workouts', {
+      fetch(apiURL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -83,7 +85,7 @@ function CustomWorkouts() {
     const workoutToDelete = workoutList[index];
     const updatedList = workoutList.filter((_, i) => i !== index);
 
-    fetch(`http://localhost:3001/workouts/${workoutToDelete.id}`, {
+    fetch(`${apiURL}/${workoutToDelete.id}`, {
       method: 'DELETE',
     })
       .then(() => setWorkoutList(updatedList))
@@ -96,7 +98,7 @@ function CustomWorkouts() {
       i === index ? updatedWorkout : workout
     );
 
-    fetch(`http://localhost:3001/workouts/${updatedWorkout.id}`, {
+    fetch(`${apiURL}/${updatedWorkout.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
